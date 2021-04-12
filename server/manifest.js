@@ -3,6 +3,7 @@
 const Dotenv = require('dotenv');
 const Confidence = require('@hapipal/confidence');
 const Toys = require('@hapipal/toys');
+const Schwifty = require('@hapipal/schwifty');
 
 // Pull .env into process.env
 Dotenv.config({ path: `${__dirname}/.env` });
@@ -32,9 +33,6 @@ module.exports = new Confidence.Store({
             {
                 plugin: '../lib', // Main plugin
                 options: {}
-            },
-            {
-                plugin: './plugins/swagger'
             },
             {
                 plugin: {
