@@ -35,6 +35,29 @@ module.exports = new Confidence.Store({
                 options: {}
             },
             {
+                plugin: '@hapipal/schwifty',
+                options: {
+                    $filter: 'NODE_ENV',
+                    $default: {},
+                    $base: {
+                        migrateOnStart: true,
+                        knex: {
+                            client: 'sqlite3',
+                            useNullAsDefault: true,     // Suggested for sqlite3
+                            connection: {
+                                filename: ':memory:'
+                            },
+                            migrations: {
+                                stub: Schwifty.migrationsStubPath
+                            }
+                        }
+                    },
+                    production: {
+                        migrateOnStart: false
+                    }
+                }
+            },
+            {
                 plugin: {
                     $filter: 'NODE_ENV',
                     $default: '@hapipal/hpal-debug',
