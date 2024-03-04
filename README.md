@@ -9,7 +9,9 @@ Ce projet s'appuie sur le framework Hapi.js et a pour objectif de concevoir une 
   
   ```docker run --name hapi-mysql -e MYSQL_USER=samuel -e MYSQL_PASSWORD=samuel23 -e MYSQL_ROOT_PASSWORD=samuel23 -e MYSQL_DATABASE=hapi -d -p 3308:3306 mysql:8 mysqld --default-authentication-plugin=mysql_native_password```
   
-- Installez les dépendences de NodeJS : 
+- Installez les dépendences de NodeJS : ```npm install```
+- Ensuite vous pouvez lancer votre serveur en local : ```npm start```
+- Vous pouvez accéder au Swagger via cette url : http://localhost:3000/documentation
 
 
 ## Gestion des utilisateurs
@@ -21,4 +23,9 @@ Ce projet s'appuie sur le framework Hapi.js et a pour objectif de concevoir une 
 -	Chaque utilisateur possède un rôle : « admin » ou « user » étant utilisé en tant que scope pour gérer l’accès aux différentes fonctionnalités de l’appli.
 
 -	Seuls les gens ayant le rôle « admin » peuvent modifier/supprimer un utilisateur, ou bien tous les afficher
+
+-	Voici l'ensemble des routes de gestion des utilisateurs :
+  
+![image](https://github.com/cOpeRency/iut-project/assets/122995158/d908dea1-f111-4bee-b289-45354138efc6)
+
 
