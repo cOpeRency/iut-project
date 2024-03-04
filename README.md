@@ -29,3 +29,26 @@ Ce projet s'appuie sur le framework Hapi.js et a pour objectif de concevoir une 
 ![image](https://github.com/cOpeRency/iut-project/assets/122995158/d908dea1-f111-4bee-b289-45354138efc6)
 
 
+## Gestion des films
+
+-	Un film possède un titre, un réalisateur, une description et une date de sortie.
+
+-	Le réalisateur est une chaine de caractère pour l’instant, le top serait d’avoir une table « Réalisateurs » afin de pouvoir trier les films par réalisateur.
+
+-	N’importe qui peut voir les films ou un film en particulier, mais pour les modifier, ajouter ou supprimer il faut être un administrateur.
+
+- Voici l'ensemble des routes de gestion des films :
+
+  ![image](https://github.com/cOpeRency/iut-project/assets/122995158/140a7ccf-fb4d-4b9e-8396-895984c61330)
+
+
+## Gestion des favoris
+
+-	Chaque utilisateur a accès à ses favoris, peut ajouter des films dans ses favoris, ou bien les supprimer
+
+- Voici l'ensemble des routes de gestion des favoris :
+
+  ![image](https://github.com/cOpeRency/iut-project/assets/122995158/b1a4edf3-9067-494d-a5cf-c06f79457c18)
+
+
+Libre à vous de tester les différentes routes, en vous aidant des valeurs par défaut, je ne vous espère pas de 500 foired !
